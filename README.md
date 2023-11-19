@@ -1,2 +1,2 @@
-# Chale-Hotel
+# Chalé Hotel
 Hotel
