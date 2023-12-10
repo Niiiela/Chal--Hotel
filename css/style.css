@@ -1,53 +1,209 @@
-/*Begin Main structure*/
+/* begin general settings */
 *
 {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
+/* end general settings */
+/* begin body */
 body
 {
-	font-family: Helvetica, "Trebuchet MS", sans-serif;
-	background: #fff url(../img/bg.png);
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    background: #fff url(../img/bg.png);
 	margin: 15px;
 }
-/*End Main structure*/
-/*Begin container*/
+/* end body */
+/* begin container */
 #container
 {
-	background: #ede9cc;
-    margin:  0 auto;
+    background: rgb(7, 151, 124) url(../img/bg-container.png) top center repeat-y;
+    margin: 0 auto;
     min-width: 740px;
     max-width: 1180px;
 }
-/*End container*/
-/*Begin Top*/
-#top
+/* end container */
+/* begin topo */
+#topo
 {
     position: relative;
-	background: #dbcd87;
-	height: 15.4em;
-	min-height: 250px;
+    background: rgb(239, 220, 178);
+    height: 15.4em;
+    min-height: 250px;
 }
-/*End Top*/
-/*Begin Logo Hotel Chalé*/
-#logo_Hotel
+/* end topo */
+/* begin area-logo */
+#area-logo
 {
-    background: url(../img/topo-imagem-principal.png) no-repeat;
-    position:absolute;
+    position: absolute;
+    background: url(../img/chale1.png) no-repeat;
     width: 100%;
     height: 250px;
     top: 0;
-    left: 0;
+    top: 0;
+    z-index: 1;
 }
-/*End Logo Hotel Chalé*/
-/*Begin Menu*/
-#menu
+.logo a
 {
-    background: url(../img/topo-imagem-lateral.png) no-repeat;
-    position:absolute;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../img/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -90000px;
+}
+/* end area-logo */
+/* begin area-menu */
+#area-menu
+{
+    position: absolute;
     top: 0;
     right: 0;
-    width: 545px;
+    background: url(../img/topo-imagem-lateral.png) no-repeat;
+    width: 450px;
     height: 250px;
+    z-index: 2;
+} 
+/* end area-menu*/
+/* begin conteudo-menu */
+#conteudo-menu
+{
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
 }
-/*End Menu*/
+/* end conteudo-menu */
+/* begin menu-laterais */
+#menu-laterais
+{
+    border-bottom: 1px solid rgb(239,227,155);
+    border-top:  1px solid rgb(239,227,155);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:  0.8em;
+    color: rgb(53, 74, 86);
+} 
+#menu-laterais .locais
+{
+    float: left;
+    line-height: 2.1em;
+}
+a
+{
+    text-decoration: none;
+}
+a.reserva
+{
+    text-transform: uppercase;
+    background: rgb(53, 74, 86);
+    color: #e0d8a3;
+    padding: 10px;
+    float: right;
+}
+/* end menu-laterais */
+/* begin menu */
+#menu
+{
+    margin-top: 15px;
+}
+ul
+{
+    list-style: none;
+}
+ul#navegacao
+{
+    float: left;
+}
+ul#navegacao a
+{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: rgb(53, 74, 86);
+    line-height: 30px;
+}
+ul#navegacao a:hover
+{
+    background: #fdf6be;
+}
+.depoimento
+{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+/* end menu */
+/* begin area-principal */
+#area-principal
+{
+    background: url(../img/bg-area-principal.png) top left repeat-x;
+    float: left;
+    width: 50%;
+    padding: 15px 0;
+}
+#area-lateral
+{
+    background: url(../img/bg-area-lateral.png) top left repeat-x;
+    float: right;
+    width: 50%;
+    padding: 20px 0;
+}
+.conteudo
+{
+    margin: 0 auto;
+    width: 90%;
+}
+h2
+{
+    color: rgb(53, 74, 86);
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+p
+{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+/* end area-principal */
+/* begin rodapé */
+#rodape
+{
+    clear: both;
+    padding: 16px;
+    background: #fff url(../img/bg-rodape.png) repeat-x top;
+    color: rgb(53, 74, 86);
+    text-align: center;
+}
+/* end rodape */
+/* begin lista */
+#lista li
+{
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+#lista li  a img
+{
+    float: left;
+    margin-right: 8px;
+}
+#lista li a p
+{
+    color: #000;
+    font-size: 0.8em;
+}
+#lista li a h3
+{
+    font-size: 1em;
+    color: rgb(53, 74, 86);
+    padding: 4px 0;
+    background: url(../img/ornamento.png) no-repeat center right;
+}
+#lista li:hover
+{
+    background: #f6f3d6;
+    cursor: pointer;
+}
+/* end lista */
